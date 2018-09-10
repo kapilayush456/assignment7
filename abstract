@@ -1,0 +1,40 @@
+abstract class animals{
+	String name;
+	abstract void eat();
+	void speak()
+	{
+		System.out.println(name);
+	}
+}
+class dog extends animals{
+	dog(String name)
+	{
+		this.name=name;
+	}
+	void eat()
+	{
+		System.out.println("Dog is eating");
+	}
+}
+class cat extends animals{
+	cat(String name)
+	{
+		this.name=name;
+	}
+	void eat()
+	{
+		System.out.println("Cat is eating");
+	}
+}
+public class abs
+{
+	public static void main(String[] x)
+	{
+		dog obj=new dog("dog");
+		cat obj1=new cat("cat");
+		obj.speak();
+		obj.eat();
+		obj1.speak();
+		obj1.eat();
+	}
+}
