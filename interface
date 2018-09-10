@@ -1,0 +1,38 @@
+interface animals
+{
+	void speak();
+	void eat();
+}
+class cat implements animals
+{
+	public void speak()
+	{
+		System.out.println("meow");
+	}
+	public void eat()
+	{
+		System.out.println("cat is eating");
+	}
+}
+class dog implements animals
+{
+	public void speak()
+	{
+		System.out.println("bark");
+	}
+	public void eat()
+	{
+		System.out.println("dog is eating");
+	}
+}
+public class inter{
+public static void main(String[] x)
+{
+	dog d=new dog();
+	cat c=new cat();
+	d.speak();
+	d.eat();
+	c.speak();
+	c.eat();
+}
+}
